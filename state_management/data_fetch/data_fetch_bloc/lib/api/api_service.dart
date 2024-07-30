@@ -1,15 +1,16 @@
 import 'dart:convert';
 import 'dart:developer';
 
+import 'package:data_fetch_bloc/api/mock_client_provider.dart';
 import 'package:data_fetch_bloc/api/models/post.dart';
-import 'package:http/http.dart' as http;
 
 Future<List<Post>> fetchPosts() async {
   try {
+    final mockClient = MockClientProvider.createMockClient();
+
     final stopwatch = Stopwatch()..start();
 
-    final response =
-        await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
+    final response = await mockClient.get(Uri.parse(''));
 
     if (response.statusCode == 200) {
       final List<dynamic> jsonList = jsonDecode(response.body);
