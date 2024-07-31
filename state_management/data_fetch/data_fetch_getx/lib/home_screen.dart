@@ -44,10 +44,6 @@ class _HomeScreenState extends State<HomeScreen> {
         await Future.delayed(Duration.zero);
         await dataFetchController.loadPosts();
         await Future.delayed(Duration.zero);
-
-        // This print is used by the python script to collect the data
-        // ignore: avoid_print
-        print('Next iteration');
       }
       stopwatch.stop();
 

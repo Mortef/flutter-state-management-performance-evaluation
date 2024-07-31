@@ -58,10 +58,6 @@ class _HomeScreenState extends State<HomeScreen> {
         await dataFetchBloc.stream
             .firstWhere((state) => !state.isLoading && state.posts.isNotEmpty);
         await Future.delayed(Duration.zero);
-
-        // This print is used by the python script to collect the data
-        // ignore: avoid_print
-        print('Next iteration');
       }
       stopwatch.stop();
 

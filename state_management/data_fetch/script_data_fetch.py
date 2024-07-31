@@ -4,9 +4,9 @@ import time
 import re
 
 # Set loop variables
-WARM_UP_COUNT = 10000
-LOOP_AMOUNT = 1000
-COUNT_AMOUNT = 10000
+WARM_UP_COUNT = 1000
+LOOP_AMOUNT = 100
+COUNT_AMOUNT = 1000
 
 # List of directories to process
 directories = ['data_fetch_riverpod', 'data_fetch_bloc', 'data_fetch_watchit', 'data_fetch_getx', 'data_fetch_mobx', 'data_fetch_provider', 'data_fetch_riverpod', 'data_fetch_watchit', 'data_fetch_bloc', 'data_fetch_mobx', 'data_fetch_getx', 'data_fetch_provider']
