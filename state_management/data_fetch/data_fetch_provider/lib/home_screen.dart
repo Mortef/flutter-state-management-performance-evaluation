@@ -23,9 +23,9 @@ class _HomeScreenState extends State<HomeScreen> {
     final dataFetchProvider = context.read<DataFetchProvider>();
 
     // This constants are used to pass the values from the python script
-    const warmUpAmount = int.fromEnvironment('WARM_UP_COUNT', defaultValue: 10);
-    const loopAmount = int.fromEnvironment('LOOP_AMOUNT', defaultValue: 10);
-    const countAmount = int.fromEnvironment('COUNT_AMOUNT', defaultValue: 10);
+    const warmUpAmount = int.fromEnvironment('WARM_UP_COUNT', defaultValue: 0);
+    const loopAmount = int.fromEnvironment('LOOP_AMOUNT', defaultValue: 0);
+    const countAmount = int.fromEnvironment('COUNT_AMOUNT', defaultValue: 0);
 
     for (var i = 0; i < warmUpAmount; i++) {
       await dataFetchProvider.clearPosts();

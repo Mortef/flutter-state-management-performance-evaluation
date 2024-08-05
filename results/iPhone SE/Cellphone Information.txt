@@ -1,7 +1,0 @@
-OS: iOS
-Android Version: FILL****
-Chipset: Apple A15 Bionic (5 nm)
-CPU: Hexa-core (2x3.22 GHz Avalanche + 4x1.82 GHz Blizzard)
-GPU: Apple GPU (4-core graphics)
-RAM: 4GB
-
